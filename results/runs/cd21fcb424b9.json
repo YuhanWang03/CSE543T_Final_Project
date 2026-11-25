@@ -1,0 +1,61 @@
+{
+  "key": "cd21fcb424b9",
+  "spec": {
+    "features": "F_text",
+    "model": "R1",
+    "lam": 0.0001,
+    "gamma": 0.0,
+    "pairs": "main",
+    "seed": 17,
+    "init": "anchor",
+    "method": "BFGS"
+  },
+  "feature_names": [
+    "query_len",
+    "mean_idf"
+  ],
+  "zero_variance": [],
+  "anchor_degenerated_to_R1": false,
+  "n_queries": 2590,
+  "n_pairs": 259000,
+  "w": [
+    -3.9442973773031915,
+    -3.903535266423257,
+    2.437622854869673
+  ],
+  "time_s": 1.2992740999907255,
+  "nit": 30,
+  "nfev": 34,
+  "njev": 34,
+  "scipy_success": true,
+  "message": "Optimization terminated successfully.",
+  "grad_inf": 5.423929569285652e-06,
+  "converged": true,
+  "J": 0.7450565215400312,
+  "L_rank": 0.7439975419020916,
+  "l2": 0.0010589796379396532,
+  "anchor": 0.0,
+  "hess_eig_min": 0.00023108489857488206,
+  "hess_eig_max": 0.014198698859681152,
+  "cond": 61.443646673779185,
+  "dev": {
+    "ndcg@10": 0.33091583104886557,
+    "recall@10": 0.1471362260229832,
+    "map@10": 0.1058926842530562
+  },
+  "dev_delta_vs_fixed": {
+    "mean": -0.006793532619114176,
+    "severe_degradation_frac": 0.16049382716049382,
+    "p10": -0.07630538240951916,
+    "improved_frac": 0.19753086419753085
+  },
+  "dev_alpha": {
+    "mean": 0.31470349981902573,
+    "std": 0.39946933699900494,
+    "p5": 6.744514881040536e-07,
+    "p25": 0.0002705144258455105,
+    "p50": 0.04660519016725448,
+    "p75": 0.7522284434572388,
+    "p95": 0.9945422505250225
+  }
+}

@@ -1,0 +1,17 @@
+# Versions actually used for the phase-1 run (Python 3.11.5, Windows 11, RTX 4060 Laptop, CUDA 12.4).
+# torch / torchvision come from the PyTorch CUDA 12.4 index:
+#   pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu124
+torch==2.5.1
+torchvision==0.20.1
+numpy==2.4.4
+scipy==1.17.1
+transformers==4.46.3
+tokenizers==0.20.3
+huggingface-hub==0.36.2
+safetensors==0.7.0
+rank-bm25==0.2.2
+pytrec-eval-terrier==0.5.11
+PyYAML==6.0.3
+matplotlib==3.10.9
+tqdm==4.67.3
+pytest==7.4.0

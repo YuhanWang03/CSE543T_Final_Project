@@ -1,0 +1,69 @@
+# CSE543T adaptive hybrid retrieval — experiment configuration (plan v3.0)
+project: cse543t-adaptive-hybrid-retrieval
+
+paths:
+  data_dir: data          # downloaded dataset (not committed)
+  cache_dir: cache        # score matrices, features, visible texts
+  results_dir: results    # tables, figures, decisions, run logs
+
+data:
+  url: https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/nfcorpus.zip
+  md5: a89dba18a62ef92f7d323ec890a0d38d
+  expected:
+    corpus: 3633
+    queries: 3237
+    train: 2590
+    dev: 324
+    test: 323
+
+text:
+  max_tokens: 512         # total E5 input budget incl. "passage: " prefix and special tokens
+
+bm25:
+  k1: 1.5
+  b: 0.75
+  epsilon: 0.25
+  token_pattern: "[a-z0-9]+"
+
+dense:
+  model: intfloat/e5-small-v2
+  revision: ffb93f3bd4047442299a41ebb6fa998a38507c52   # pinned: the commit used for all cached scores
+  query_prefix: "query: "
+  passage_prefix: "passage: "
+  batch_size: 64
+  device: cuda            # falls back to cpu if CUDA is unavailable
+
+fusion:
+  std_eps: 1.0e-8         # epsilon in z-score denominator; rows with std below this are set to 0 (degenerate)
+  alpha_step: 0.05        # fixed-fusion grid {0, 0.05, ..., 1}
+  rrf_k_default: 60
+  rrf_k_grid: [20, 60, 100]
+
+eval:
+  k: 10                   # NDCG@10 (primary), Recall@10, MAP@10
+
+divergence:               # plan v3 §4.2 / §6
+  jaccard_k: 10
+  rbo_depth: 20
+  rbo_p: 0.9
+  switch_mode_share: 0.40 # switch to RBO if the most frequent g_J value covers > 40% of train queries
+  switch_iqr: 0.10        # ... or if the train IQR of g_J is below 0.1
+
+e0:                       # plan v3 §4.1
+  gap_low: 0.01
+  gap_high: 0.03
+  alpha_diff: 0.2
+
+train:                    # plan v3 §5, §9
+  pairs_per_query: 100
+  hard_per_query: 50
+  skip_head: 20           # hard candidates skip both retrievers' top-20
+  hard_depth: 100
+  pair_variants: [main, noskip, uniform]
+  lam_grid: [1.0e-4, 1.0e-3, 1.0e-2]
+  gamma_grid: [0.001, 0.01, 0.1, 1.0]
+  feature_margin: 0.005   # adopt F8 only if dev NDCG@10 >= F5 + margin
+
+runtime:
+  threads: 8
+  seed: 17

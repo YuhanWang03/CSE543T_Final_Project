@@ -1,0 +1,15 @@
+.venv/
+data/
+cache/
+__pycache__/
+*.pyc
+results/_*.txt
+~$*.docx
+report/node_modules/
+report/package*.json
+.pytest_cache/
+# report, slides and planning documents are kept out of the repository
+report/
+*.docx
+*.pptx
+*.pdf

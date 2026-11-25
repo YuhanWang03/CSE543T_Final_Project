@@ -1,0 +1,71 @@
+{
+  "main": {
+    "variant": "main",
+    "seed": 17,
+    "skipped_no_positive": 0,
+    "skipped_no_unlabelled": 0,
+    "queries_short_of_pairs": 0,
+    "fallback_pairs": 0,
+    "queries_with_empty_hard_set": 0,
+    "n_pairs": 259000,
+    "n_queries": 2590,
+    "pairs_per_query_min": 100,
+    "hard_fraction": 0.5,
+    "fallback_fraction": 0.0,
+    "duplicate_fraction": 0.0,
+    "hard_set_size_percentiles": {
+      "0": 15.0,
+      "10": 111.0,
+      "50": 142.0,
+      "90": 157.0,
+      "100": 160.0
+    },
+    "md5": "66e4771b00f7dc85bf186a8919df0be4"
+  },
+  "noskip": {
+    "variant": "noskip",
+    "seed": 17,
+    "skipped_no_positive": 0,
+    "skipped_no_unlabelled": 0,
+    "queries_short_of_pairs": 0,
+    "fallback_pairs": 0,
+    "queries_with_empty_hard_set": 0,
+    "n_pairs": 259000,
+    "n_queries": 2590,
+    "pairs_per_query_min": 100,
+    "hard_fraction": 0.5,
+    "fallback_fraction": 0.0,
+    "duplicate_fraction": 0.0,
+    "hard_set_size_percentiles": {
+      "0": 18.0,
+      "10": 136.0,
+      "50": 172.0,
+      "90": 195.0,
+      "100": 200.0
+    },
+    "md5": "ae3923d31292d1aa265888257f9aa72e"
+  },
+  "uniform": {
+    "variant": "uniform",
+    "seed": 17,
+    "skipped_no_positive": 0,
+    "skipped_no_unlabelled": 0,
+    "queries_short_of_pairs": 0,
+    "fallback_pairs": 0,
+    "queries_with_empty_hard_set": 0,
+    "n_pairs": 259000,
+    "n_queries": 2590,
+    "pairs_per_query_min": 100,
+    "hard_fraction": 0.0,
+    "fallback_fraction": 0.0,
+    "duplicate_fraction": 0.0,
+    "hard_set_size_percentiles": {
+      "0": 0.0,
+      "10": 0.0,
+      "50": 0.0,
+      "90": 0.0,
+      "100": 0.0
+    },
+    "md5": "6037cdeb0a3d916aed78b63a15c56351"
+  }
+}

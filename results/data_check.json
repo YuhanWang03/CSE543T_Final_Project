@@ -1,0 +1,46 @@
+{
+  "verification": {
+    "corpus": 3633,
+    "queries": 3237,
+    "dropped_qrels": 0,
+    "splits": {
+      "train": {
+        "queries": 2590,
+        "qrels": 110575,
+        "labels": {
+          "1": 110575
+        },
+        "queries_without_positive": 0
+      },
+      "dev": {
+        "queries": 324,
+        "qrels": 11385,
+        "labels": {
+          "1": 10864,
+          "2": 521
+        },
+        "queries_without_positive": 0
+      },
+      "test": {
+        "queries": 323,
+        "qrels": 12334,
+        "labels": {
+          "1": 11758,
+          "2": 576
+        },
+        "queries_without_positive": 0
+      }
+    }
+  },
+  "duplicate_query_texts": {
+    "train/dev": 4,
+    "train/test": 4,
+    "dev/test": 1
+  },
+  "test_query_ids_overlapping_train": [
+    "PLAIN-2440",
+    "PLAIN-2630",
+    "PLAIN-3053",
+    "PLAIN-3251"
+  ]
+}

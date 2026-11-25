@@ -1,0 +1,18 @@
+{
+  "token_budget_for_text": 508,
+  "n_truncated": 342,
+  "frac_truncated": 0.09413707679603633,
+  "full_token_length_percentiles": {
+    "0": 24.0,
+    "10": 195.20000000000005,
+    "25": 271.0,
+    "50": 355.0,
+    "75": 428.0,
+    "90": 502.8000000000002,
+    "95": 556.0,
+    "99": 688.6799999999998,
+    "100": 2375.0
+  },
+  "rule": "title + ' ' + text, cut to E5 token budget at a word boundary; BM25 and Dense share this text",
+  "model_revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52"
+}

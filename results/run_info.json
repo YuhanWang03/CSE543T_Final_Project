@@ -1,0 +1,208 @@
+{
+  "runs": [
+    {
+      "time": "2026-11-19 07:31:39",
+      "stages": [
+        "e0"
+      ],
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "threads": "8",
+      "seed": 17,
+      "packages": {
+        "numpy": "1.26.4",
+        "scipy": "1.17.1",
+        "torch": "2.3.1+cu121",
+        "transformers": "4.46.3",
+        "tokenizers": "0.20.3",
+        "huggingface-hub": "0.36.2",
+        "rank-bm25": "0.2.2",
+        "pytrec-eval-terrier": "0.5.11",
+        "PyYAML": "6.0.3",
+        "matplotlib": "3.10.9",
+        "torch_runtime": "2.5.1+cu124"
+      },
+      "git_commit": null
+    },
+    {
+      "time": "2026-11-19 07:33:38",
+      "stages": [
+        "e1"
+      ],
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "threads": "8",
+      "seed": 17,
+      "packages": {
+        "numpy": "2.4.4",
+        "scipy": "1.17.1",
+        "torch": "2.5.1+cu124",
+        "torchvision": "0.20.1+cu124",
+        "transformers": "4.46.3",
+        "tokenizers": "0.20.3",
+        "huggingface_hub": "0.36.2",
+        "matplotlib": "3.10.9",
+        "yaml": "6.0.3",
+        "rank-bm25": "0.2.2",
+        "pytrec-eval-terrier": "0.5.11"
+      },
+      "git_commit": null
+    },
+    {
+      "time": "2026-11-19 07:51:40",
+      "stages": [
+        "pairs",
+        "gradcheck"
+      ],
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "threads": "8",
+      "seed": 17,
+      "packages": {
+        "numpy": "2.4.4",
+        "scipy": "1.17.1",
+        "torch": "2.5.1+cu124",
+        "torchvision": "0.20.1+cu124",
+        "transformers": "4.46.3",
+        "tokenizers": "0.20.3",
+        "huggingface_hub": "0.36.2",
+        "matplotlib": "3.10.9",
+        "yaml": "6.0.3",
+        "rank-bm25": "0.2.2",
+        "pytrec-eval-terrier": "0.5.11"
+      },
+      "git_commit": null,
+      "pairs_main_md5": "66e4771b00f7dc85bf186a8919df0be4"
+    },
+    {
+      "time": "2026-11-19 07:53:27",
+      "stages": [
+        "e2",
+        "e3"
+      ],
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "threads": "8",
+      "seed": 17,
+      "packages": {
+        "numpy": "2.4.4",
+        "scipy": "1.17.1",
+        "torch": "2.5.1+cu124",
+        "torchvision": "0.20.1+cu124",
+        "transformers": "4.46.3",
+        "tokenizers": "0.20.3",
+        "huggingface_hub": "0.36.2",
+        "matplotlib": "3.10.9",
+        "yaml": "6.0.3",
+        "rank-bm25": "0.2.2",
+        "pytrec-eval-terrier": "0.5.11"
+      },
+      "git_commit": null
+    },
+    {
+      "time": "2026-11-19 07:55:18",
+      "stages": [
+        "lock"
+      ],
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "threads": "8",
+      "seed": 17,
+      "packages": {
+        "numpy": "2.4.4",
+        "scipy": "1.17.1",
+        "torch": "2.5.1+cu124",
+        "torchvision": "0.20.1+cu124",
+        "transformers": "4.46.3",
+        "tokenizers": "0.20.3",
+        "huggingface_hub": "0.36.2",
+        "matplotlib": "3.10.9",
+        "yaml": "6.0.3",
+        "rank-bm25": "0.2.2",
+        "pytrec-eval-terrier": "0.5.11"
+      },
+      "git_commit": null
+    },
+    {
+      "time": "2026-11-25 03:28:05",
+      "stages": [
+        "e4"
+      ],
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26300-SP0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "threads": "8",
+      "seed": 17,
+      "packages": {
+        "numpy": "2.4.4",
+        "scipy": "1.17.1",
+        "torch": "2.5.1+cu124",
+        "torchvision": "0.20.1+cu124",
+        "transformers": "4.46.3",
+        "tokenizers": "0.20.3",
+        "huggingface_hub": "0.36.2",
+        "matplotlib": "3.10.9",
+        "yaml": "6.0.3",
+        "rank-bm25": "0.2.2",
+        "pytrec-eval-terrier": "0.5.11"
+      },
+      "git_commit": null
+    },
+    {
+      "time": "2026-11-25 03:29:10",
+      "stages": [
+        "e5",
+        "e6"
+      ],
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26300-SP0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "threads": "8",
+      "seed": 17,
+      "packages": {
+        "numpy": "2.4.4",
+        "scipy": "1.17.1",
+        "torch": "2.5.1+cu124",
+        "torchvision": "0.20.1+cu124",
+        "transformers": "4.46.3",
+        "tokenizers": "0.20.3",
+        "huggingface_hub": "0.36.2",
+        "matplotlib": "3.10.9",
+        "yaml": "6.0.3",
+        "rank-bm25": "0.2.2",
+        "pytrec-eval-terrier": "0.5.11"
+      },
+      "git_commit": null
+    },
+    {
+      "time": "2026-11-25 03:29:34",
+      "stages": [
+        "test"
+      ],
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26300-SP0",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "threads": "8",
+      "seed": 17,
+      "packages": {
+        "numpy": "2.4.4",
+        "scipy": "1.17.1",
+        "torch": "2.5.1+cu124",
+        "torchvision": "0.20.1+cu124",
+        "transformers": "4.46.3",
+        "tokenizers": "0.20.3",
+        "huggingface_hub": "0.36.2",
+        "matplotlib": "3.10.9",
+        "yaml": "6.0.3",
+        "rank-bm25": "0.2.2",
+        "pytrec-eval-terrier": "0.5.11"
+      },
+      "git_commit": null
+    }
+  ]
+}

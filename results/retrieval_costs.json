@@ -1,0 +1,7 @@
+{
+  "bm25_index_and_score_all_queries_s": 12.12881769996602,
+  "dense_doc_encoding_s": 28.129311500000767,
+  "dense_query_encoding_and_scoring_s": 1.0464338000165299,
+  "n_queries": 3237,
+  "n_docs": 3633
+}

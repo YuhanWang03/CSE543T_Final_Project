@@ -1,0 +1,164 @@
+{
+  "locked_at": "2026-11-19 07:55:09",
+  "note": "Test metrics may be read only after this file exists. Nothing below may change afterwards.",
+  "decisions": {
+    "e1_alpha_fixed_dev": 0.1,
+    "alpha0_train": 0.15,
+    "e1_rrf_k_dev": 20,
+    "e0_band": {
+      "gap_dev": 0.036543800125799886,
+      "band": "high: adaptive fusion is the main line (E3 retrieval comparison is the core result)"
+    },
+    "divergence": {
+      "chosen": "g_jaccard",
+      "train_mode_share": 0.16872586872586873,
+      "train_iqr": 0.2807017543859649,
+      "triggered_by_mode_share": false,
+      "triggered_by_iqr": false
+    },
+    "pairs_main_md5": "66e4771b00f7dc85bf186a8919df0be4",
+    "feature_set": {
+      "chosen": "F5",
+      "dev_ndcg10_F5": 0.3348587506330888,
+      "dev_ndcg10_F8": 0.33434406951722223,
+      "dev_ndcg10_F_text": 0.33398038932991064,
+      "margin": 0.005
+    }
+  },
+  "dedup_test_rows_count": 319,
+  "selected_models": {
+    "R1": {
+      "key": "1764f768befd",
+      "spec": {
+        "features": "F5",
+        "model": "R1",
+        "lam": 0.001,
+        "gamma": 0.0,
+        "pairs": "main",
+        "seed": 17,
+        "init": "anchor",
+        "method": "BFGS"
+      },
+      "w": [
+        -1.8791684175387804,
+        -1.308740185350437,
+        1.7801692091010701,
+        -0.0380557961636732,
+        0.04376968332829256,
+        -0.3287684094586968
+      ],
+      "feature_names": [
+        "query_len",
+        "mean_idf",
+        "bm25_gap",
+        "dense_gap",
+        "g_jaccard"
+      ],
+      "dev_ndcg10": 0.3348587506330888
+    },
+    "R2": {
+      "key": "731125a38ad5",
+      "spec": {
+        "features": "F5",
+        "model": "R2",
+        "lam": 0.0001,
+        "gamma": 1.0,
+        "pairs": "main",
+        "seed": 17,
+        "init": "anchor",
+        "method": "BFGS"
+      },
+      "w": [
+        -1.5749916303195035,
+        -0.053990848812768444,
+        0.44818399695879846,
+        -0.012383806467857826,
+        -0.011970154696754276,
+        -0.0778458463443531
+      ],
+      "feature_names": [
+        "query_len",
+        "mean_idf",
+        "bm25_gap",
+        "dense_gap",
+        "g_jaccard"
+      ],
+      "dev_ndcg10": 0.3358752372101744
+    },
+    "R3": {
+      "key": "fd2244b0a0a8",
+      "spec": {
+        "features": "F5",
+        "model": "R3",
+        "lam": 0.001,
+        "gamma": 1.0,
+        "pairs": "main",
+        "seed": 17,
+        "init": "anchor",
+        "method": "BFGS"
+      },
+      "w": [
+        -1.5717046029753328,
+        -0.07253325435147472,
+        0.40802772691418027,
+        -0.012886924936938196,
+        -0.010064360896250896,
+        -0.13262090970868293
+      ],
+      "feature_names": [
+        "query_len",
+        "mean_idf",
+        "bm25_gap",
+        "dense_gap",
+        "g_jaccard"
+      ],
+      "dev_ndcg10": 0.3356979276506588
+    },
+    "R4": {
+      "key": "9dae09cefd0e",
+      "spec": {
+        "features": "F5",
+        "model": "R4",
+        "lam": 0.001,
+        "gamma": 0.1,
+        "pairs": "main",
+        "seed": 17,
+        "init": "anchor",
+        "method": "BFGS"
+      },
+      "w": [
+        -1.6798174837085902,
+        -0.8225581424188924,
+        1.4344178210595244,
+        0.006178971041887907,
+        -0.0060391478609335145,
+        -0.03600248427598666
+      ],
+      "feature_names": [
+        "query_len",
+        "mean_idf",
+        "bm25_gap",
+        "dense_gap",
+        "g_jaccard"
+      ],
+      "dev_ndcg10": 0.336080583386913
+    }
+  },
+  "test_models": [
+    "BM25",
+    "Dense",
+    "Fixed α=0.5",
+    "Fixed α=dev-best",
+    "RRF k=60",
+    "RRF k=dev-selected",
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "primary_comparison": "R3 (main seed) vs dev-best fixed fusion, paired bootstrap on test NDCG@10",
+  "e4_targets": [
+    "R1",
+    "R3"
+  ]
+}
